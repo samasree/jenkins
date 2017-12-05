@@ -1,0 +1,26 @@
+Jenkinsfile(Documentary Pipeline)
+pipeline{
+  agent any
+  stages{
+    stage{
+      steps('Build'){
+        sh 'echo "Build"'
+      }
+    }
+    stage('Test'){
+      steps{
+        sh 'echo "Testing"'
+      }
+    }
+    stage('Staging'){
+      step{
+        sh 'echo "Staging"'
+      }
+    }
+    stage('Production'){
+      step{
+        sh 'echo "production"'
+      }
+    }
+  }
+}
