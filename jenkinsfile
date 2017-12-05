@@ -1,4 +1,4 @@
-Jenkinsfile (Documentary Pipeline)
+Jenkinsfile (Declarative Pipeline)
 pipelin { 
   agent any
   stages {
