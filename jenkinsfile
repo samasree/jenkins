@@ -1,24 +1,24 @@
-Jenkinsfile(Documentary Pipeline)
-pipeline{
+Jenkinsfile (Documentary Pipeline)
+pipelin { 
   agent any
-  stages{
-    stage{
-      steps('Build'){
+  stages {
+    stage('Build') {
+      steps {
         sh 'echo "Build"'
       }
     }
-    stage('Test'){
-      steps{
+    stage('Test') {
+      steps {
         sh 'echo "Testing"'
       }
     }
-    stage('Staging'){
-      step{
+    stage('Staging') {
+      steps {
         sh 'echo "Staging"'
       }
     }
-    stage('Production'){
-      step{
+    stage('Production') {
+      steps {
         sh 'echo "production"'
       }
     }
